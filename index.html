@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Estoque</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Controle de Estoque</h1>
+    <form id="productForm">
+      <input type="text" id="productName" placeholder="Nome do Produto" required>
+      <input type="number" id="productQuantity" placeholder="Quantidade" min="0" required>
+      <button type="submit">Adicionar Produto</button>
+    </form>
+    <h2>Produtos em Estoque</h2>
+    <table id="productTable">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Os produtos serão adicionados aqui dinamicamente -->
+      </tbody>
+    </table>
+  </div>
+  <script src="assets/javascript/script.js"></script>
+</body>
+</html>
